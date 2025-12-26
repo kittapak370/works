@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM homework</title>
+     <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>homework4</h1>
+
+    <script>
+
+        const name = prompt("กรุณากรอกชื่อของคุณ");
+        let status; 
+        if (navigator.onLine) {
+            status = "คุณออนไลน์แล้ว";
+        } else {
+            status = "คุณกำลังออฟไลน์ โปรดเชื่อมต่ออินเทอร์เน็ต";
+        }
+
+
+        document.write(`
+            <h3>สวัสดีคุณ ${name || 'ผู้เยี่ยมชม'}</h3>
+            <p><b>สถานะ:</b> ${status}</p>
+            <p><b>Browser Info:</b> ${navigator.userAgent}</p>`);
+
+    </script>
+</body>
+</html>
