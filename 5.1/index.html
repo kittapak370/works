@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 5 - Form Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="bg-green-300 min-h-screen">
+    <div class="flex justify-center p-5">
+        <div class="bg-white w-full max-w-lg p-8 mt-4 rounded-lg shadow-lg">
+<img src="https://img.pikbest.com/png-images/qiantu/reading-day-cartoon-book-notepad-png-free_2604698.png!sw800" class="w-32 mx-auto mb-4">
+            <h1 class="text-center font-bold text-2xl text-orange-400 mt-2">แบบฟอร์มลงทะเบียนยืมหนังสือ</h1>
+            <p class="text-sm text-center text-orange-300 mt-2">
+                แบบฟอร์มลงทะเบียนยืมหนังสือสำหรับนักศึกษาคณะบริหารธุรกิจเท่านั้น
+            </p>
+<form class="mt-8 space-y-6">
+                <div>
+                    <p class="font-semibold mb-2">ชื่อ</p>
+                    <input type="text" placeholder="กรุณาระบุชื่อนักศึกษา" class="input input-bordered w-full">
+                </div>
+
+                <div>
+                    <p class="font-semibold mb-2">นามสกุล</p>
+                    <input type="text" placeholder="กรุณาระบุนามสกุลนักศึกษา" class="input input-bordered w-full ">
+                </div>
+
+                <div>
+                    <p class="font-semibold mb-2">รหัสนักศึกษา</p>
+                    <input type="text" placeholder="กรุณาเลือกสมุด" class="input input-bordered w-full">
+                </div>
+
+                <div>
+                    <p class="font-semibold mb-2">เลือกสมุดที่ต้องการ</p>
+                    <select class="select select-bordered w-full text-gray-400">
+                        <option disabled selected>กรุณาเลือกสมุด</option>
+                        <option>สมุดการ์ตูน</option>
+                        <option>สมุดนิยาย</option>
+                        <option>สมุดวรรณกรรม</option>
+                    </select>
+                </div>
+
+                <div>
+                    <p class="font-semibold mb-2">หมายเหตุ</p>
+                    <textarea class="textarea textarea-bordered w-full h-24" placeholder="กรุณาระบุหมายเหตุ"></textarea>
+                </div>
+
+                <div class="mt-10">
+                    <button type="submit" class="btn btn-success w-full text-white text-lg">ส่งแบบฟอร์ม</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
